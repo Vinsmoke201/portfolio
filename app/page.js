@@ -1,7 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import useDarkMode from './useDarkMode';
 
 export default function Home() {
+
+  const isDarkMode = useDarkMode()
   const [opacity, setOpacity] = useState(0.5);
 
   const handleScroll = () => {
@@ -87,7 +90,7 @@ export default function Home() {
         >
           <path
             d="M1280 36.1212C1123.37 13.9672 894.482 7.6923e-05 639.532 5.46345e-05C385.092 3.23907e-05 156.613 13.9113 0.00195409 35.9884L0.00195312 46.9999L1280 47L1280 36.1212Z"
-            fill="white"
+            fill="var(--background)"
           ></path>
         </svg>
       </section>
@@ -103,9 +106,9 @@ export default function Home() {
         </div>
         <div className="relative w-[90%] mt-[6rem] mx-auto">
           <img alt='field image' src="/field.png" className="absolute z-[-1] rounded-[54px]" />
-          <div className="bg-[#D9D9D9]/70 rounded-[50px] w-full flex flex-col">
-            <h2 className="font-poppins font-bold xl:text-[38px] 2xl:text-[48px] text-center text-grayColor xl:mt-[4rem] 2xl:mt-[10rem] mx-auto w-[29rem]">Agri Food The Future of Agrigultor</h2>
-            <button className="p-4 bg-primaryColor w-[10rem] rounded-[15px] text-white fontpoppins mx-auto font-medium mt-[2rem] xl:mb-[3.5rem] 2xl:mb-[3.9rem] ">Try it now</button>
+          <div className={`${isDarkMode ? "bg-black/70" : "bg-white/70"} rounded-[50px] w-full flex flex-col`}>
+            <h2 className="font-poppins font-bold opacity-100 xl:text-[38px] 2xl:text-[48px] text-center text-grayColor xl:mt-[4rem] 2xl:mt-[10rem] mx-auto w-[29rem]">Agri Food The Future of Agrigultor</h2>
+            <button className="p-4 bg-primaryColor opacity-100 w-[10rem] rounded-[15px] text-white fontpoppins mx-auto font-medium mt-[2rem] xl:mb-[3.5rem] 2xl:mb-[3.9rem] ">Try it now</button>
           </div>
         </div>
         <div className='w-[86%] mt-[6rem] mx-auto'>
@@ -147,7 +150,7 @@ export default function Home() {
               <h2 className='font-poppins font-medium xl:text-[20px] 2xl:text-[26px] text-grayText mx-auto'>Project Manager</h2>
             </div>
           </div>
-          <div className='flex flex-row ml-auto mr-auto xl:gap-[8rem] 2xl:gap-[15rem]'>
+          <div className='flex flex-row ml-auto mr-auto xl:gap-[8rem] 2xl:gap-[14rem]'>
             <div className='flex flex-col mt-[6rem] '>
               <img alt='abdelilah' src='/team/abdelilah.png' className='xl:h-[14rem] 2xl:h-[18rem] xl:w-[14rem] 2xl:w-[18rem]' />
               <h1 className='font-poppins font-bold text-blackText xl:text-[20px] 2xl:text-[26px] mx-auto mt-[1rem]'>Abdelilah AYACHE</h1>
@@ -167,7 +170,7 @@ export default function Home() {
         </div>
         <div className="relative w-[90%] xl:h-[41.5rem] 2xl:h-[59rem] mt-[6rem] mx-auto">
           <img alt='agrifood tech' src="/agrifood.png" className="absolute z-[-1] rounded-[54px]" />
-          <div className="bg-[#D9D9D9]/70 rounded-[50px] w-full h-full flex flex-col">
+          <div className={`${isDarkMode ? "bg-black/70" : "bg-white/70"} rounded-[50px] w-full h-full flex flex-col`}>
             <div className='xl:w-[50rem] 2xl:w-[60rem] 2xl:h-[16rem] bg-seconadryColor xl:mt-[10rem] 2xl:mt-[20rem] ml-auto mr-[4rem] p-14 rounded-[50px] font-poppins font-medium text-justify xl:text-[18px] 2xl:text-[24px] text-whiteText'>
               This partnership reflects our commitment to innovation in the agricultural sector and strengthens our mission to empower farmers through technology and data-driven solutions. Together, we aim to revolutionize the agricultural landscape and create a sustainable future for all.
             </div>
@@ -177,9 +180,9 @@ export default function Home() {
         </div>
         <div className='relative mt-[6rem]'>
           <svg width="1024" height="80" viewBox="0 0 1024 80" fill="none" preserveAspectRatio="none" className="absolute top-0 w-full">
-            <path fillRule="evenodd" clipRule="evenodd" d="M1022.92 0.65625C692.036 75.3814 344.215 84.2818 0 8.19348V62V80.66H1024V62V0.65625H1022.92Z" fill="var(--gray-color)"></path>
+            <path fillRule="evenodd" clipRule="evenodd" d="M1022.92 0.65625C692.036 75.3814 344.215 84.2818 0 8.19348V62V80.66H1024V62V0.65625H1022.92Z" fill="#323E48"></path>
           </svg>
-          <div className='w-full xl:h-[30rem] 2xl:h-[40rem] mt-[5rem] bg-grayColor'>
+          <div className='w-full xl:h-[30rem] 2xl:h-[40rem] mt-[5rem] bg-[#323E48]'>
             <div className='flex flex-row'>
               <img alt='logo agrismart' src='/logo-footer.svg' className='2xl:h-[20rem] xl:h-[16rem] ml-[6rem]' />
               <div className='flex flex-col text-whiteText font-poppins font-medium xl:text-[20px] 2xl:text-[28px] ml-auto mr-[10rem] mt-[10rem]'>
