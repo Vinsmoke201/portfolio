@@ -105,7 +105,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative w-[90%] xl:h-[20rem] 2xl:h-[30rem] mt-[6rem] mx-auto">
-          <img alt='field image' src="/field.png" className="absolute z-[-1] xl:h-[20rem] 2xl:h-[30rem] rounded-[54px]" />
+          <img alt='field image' src="/field.png" className="absolute z-[-1] xl:h-[20rem] 2xl:h-[30rem] w-full rounded-[54px]" />
           <div className={`${isDarkMode ? "bg-black/70" : "bg-white/70"} rounded-[50px] w-full h-full flex flex-col`}>
             <h2 className="font-poppins font-bold opacity-100 xl:text-[38px] 2xl:text-[48px] text-center text-grayColor xl:mt-[4rem] 2xl:mt-[10rem] mx-auto w-[29rem]">Agri Food The Future of Agrigultor</h2>
             <button className="p-4 bg-primaryColor opacity-100 w-[10rem] rounded-[15px] text-white fontpoppins mx-auto font-medium mt-[2rem] xl:mb-[3.5rem] 2xl:mb-[3.9rem] ">Try it now</button>
