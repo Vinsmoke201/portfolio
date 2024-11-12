@@ -40,7 +40,7 @@ export default function Home() {
         <div className="absolute top-[48%] bg-[#868383] w-full h-[2px]" />
         <div className="w-full h-[50%] flex flex-row">
           <img src="/logo.svg" className="h-[90%] my-auto ml-[4rem]" />
-          <div className="relative 2xl:ml-[46rem] xl:ml-[20rem] flex font-medium text-whiteText 2xl:text-[20px] xl:text-[16px] cursor-pointer my-auto cursor-default group">
+          <div className="relative 2xl:ml-[32rem] xl:ml-[20rem] flex font-medium text-whiteText 2xl:text-[20px] xl:text-[16px] cursor-pointer my-auto cursor-default group">
             About Us
             <span className="absolute left-0 bottom-[-0.5rem] rounded-full w-full h-[7px] hd:h-[5px] 2k:h-[9px] bg-gradient-to-r from-[#297641] to-[#CB2124] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
           </div>
@@ -104,9 +104,9 @@ export default function Home() {
             <p className="font-poppins xl:text-[14px] 2xl:text-[18px] text-justify mt-[1rem]">AgriSmart empowers farmers with digital tools, connecting them to experts, resources, services, and markets. We promote sustainable practices, offer crop management and financial tools, and support informed decision-making for long-term success. Our mission: drive innovation and sustainability in agriculture for Morocco and beyond.</p>
           </div>
         </div>
-        <div className="relative w-[90%] mt-[6rem] mx-auto">
-          <img alt='field image' src="/field.png" className="absolute z-[-1] rounded-[54px]" />
-          <div className={`${isDarkMode ? "bg-black/70" : "bg-white/70"} rounded-[50px] w-full flex flex-col`}>
+        <div className="relative w-[90%] xl:h-[20rem] 2xl:h-[30rem] mt-[6rem] mx-auto">
+          <img alt='field image' src="/field.png" className="absolute z-[-1] xl:h-[20rem] 2xl:h-[30rem] rounded-[54px]" />
+          <div className={`${isDarkMode ? "bg-black/70" : "bg-white/70"} rounded-[50px] w-full h-full flex flex-col`}>
             <h2 className="font-poppins font-bold opacity-100 xl:text-[38px] 2xl:text-[48px] text-center text-grayColor xl:mt-[4rem] 2xl:mt-[10rem] mx-auto w-[29rem]">Agri Food The Future of Agrigultor</h2>
             <button className="p-4 bg-primaryColor opacity-100 w-[10rem] rounded-[15px] text-white fontpoppins mx-auto font-medium mt-[2rem] xl:mb-[3.5rem] 2xl:mb-[3.9rem] ">Try it now</button>
           </div>
@@ -169,13 +169,14 @@ export default function Home() {
           </div>
         </div>
         <div className="relative w-[90%] xl:h-[41.5rem] 2xl:h-[59rem] mt-[6rem] mx-auto">
-          <img alt='agrifood tech' src="/agrifood.png" className="absolute z-[-1] rounded-[54px]" />
+          <img alt='agrifood tech' src="/agrifood.png" className="absolute z-[-1] xl:h-[41.5rem] 2xl:h-[59rem] w-full rounded-[54px]" />
           <div className={`${isDarkMode ? "bg-black/70" : "bg-white/70"} rounded-[50px] w-full h-full flex flex-col`}>
             <div className='xl:w-[50rem] 2xl:w-[60rem] 2xl:h-[16rem] bg-seconadryColor xl:mt-[10rem] 2xl:mt-[20rem] ml-auto mr-[4rem] p-14 rounded-[50px] font-poppins font-medium text-justify xl:text-[18px] 2xl:text-[24px] text-whiteText'>
               This partnership reflects our commitment to innovation in the agricultural sector and strengthens our mission to empower farmers through technology and data-driven solutions. Together, we aim to revolutionize the agricultural landscape and create a sustainable future for all.
             </div>
             <div className='xl:w-[50rem] 2xl:w-[64rem] 2xl:h-[16rem] bg-primaryColor mt-[1rem] ml-[5rem] p-16 rounded-[50px] font-poppins font-medium text-justify xl:text-[18px] 2xl:text-[24px] text-whiteText'>
-              We are proud to announce that Agrismart is now part of the prestigious Agri-Food Tech program, powered by Mohammed VI Polytechnic University in collaboration with the IAV school.            </div>
+              We are proud to announce that Agrismart is now part of the prestigious Agri-Food Tech program, powered by Mohammed VI Polytechnic University in collaboration with the IAV school.
+            </div>
           </div>
         </div>
         <div className='relative mt-[6rem]'>
